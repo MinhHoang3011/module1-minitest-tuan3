@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let arr = [5,10,15,20,25,30,35,40,45,50];
+  function checkIn(num){
+      let count = 0;
+      for (let i = 0; i < arr.length; i++) {
+          if (num == arr[i]){
+              count++
+          }
+      }
+      return count;
+  }
+  let number = +prompt("Nhập ký tự mà có trong mảng");
+  let check = checkIn(number);
+  alert("Số ký tự " + number + " có trong mảng là "+ check+ " lần");
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr = [5,10,15,20,25,30,35,40,45,50];
+    function checkChan(){
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]%2==0){
+                count++
+            }
+        }return count;
+    }
+    let n = checkChan(arr)
+    alert("Số chẵn có trong mảng là: " + n + " số");
+</script>
+</body>
+</html>
